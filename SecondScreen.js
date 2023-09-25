@@ -12,6 +12,11 @@ export default function SecondScreen({route,navigation}) {
         }
     }, [])
 
+    function close() {
+        navigation.goBack(null);
+        return true;
+    }
+
     useLayoutEffect(() => {
         navigation.setOptions({
             headerStyle: {
@@ -21,7 +26,7 @@ export default function SecondScreen({route,navigation}) {
     }, [])
 
     return (
-        <View styles={style.container}>
+        <View styles={styles.container}>
             <Text>Second screen</Text>
         </View>
     )

@@ -1,8 +1,8 @@
 import React, { useLayoutEffect, useState } from "react";
-import {StyleSheet, View, Text} from 'react-native';
+import {StyleSheet, View, Text, TextInput} from 'react-native';
 import { AntDesign } from '@expo/vector-icons';
 
-export default function HomeScreen(navigation) {
+export default function HomeScreen({navigation}) {
     const [message, setMessage] = useState('Testing');
 
     useLayoutEffect(() => {
